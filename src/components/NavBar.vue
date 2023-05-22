@@ -25,7 +25,7 @@
   </header>
 </template>
 <script lang="ts">
-import menuIcon from "../assets/icons/icons8-menu.svg";
+// import menuIcon from "../assets/icons/icons8-menu.svg";
 
 export default {
     name: "navbar",
