@@ -1,10 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <!-- <router-view /> -->
+  <div class="app">
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+    <NavBar />
+    <router-view />
+  </div>
 </template>
+<script lang="ts">
+import NavBar from "./components/NavBar";
+
+export default {
+  name: "app",
+  components: { NavBar },
+};
+</script>
 
 <style>
 #app {

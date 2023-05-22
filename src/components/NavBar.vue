@@ -13,25 +13,25 @@
         </ul>
       </div>
     </nav>
-    <menuIcon />
+    <menu-icon src="icons8-menu.svg"></menu-icon>
     <transition class="mobile-nav">
-        <ul>
-          <router-links class="links" to="#">Home</router-links>
-          <router-links class="links" to="#">Blogs</router-links>
-          <router-links class="links" to="#">Create Post</router-links>
-          <router-links class="links" to="#">Login/Register</router-links>
-        </ul>
+      <ul>
+        <router-links class="links" to="#">Home</router-links>
+        <router-links class="links" to="#">Blogs</router-links>
+        <router-links class="links" to="#">Create Post</router-links>
+        <router-links class="links" to="#">Login/Register</router-links>
+      </ul>
     </transition>
   </header>
 </template>
 <script lang="ts">
-// import menuIcon from "../assets/icons/icons8-menu.svg";
+import menuIcon from "vue-inline-svg";
 
 export default {
-    name: "navbar",
-    components: {
-        menuIcon,
-    },
+  name: "nav-bar",
+  components: {
+    menuIcon,
+  },
 };
 </script>
 <style scoped></style>
